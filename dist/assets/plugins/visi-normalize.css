@@ -185,9 +185,3 @@ textarea {
     -webkit-appearance: button;
     font: inherit;
 }
-label{
-    background-color: yellow;
-    width: 100%;
-    overflow: hidden;
-    display: block;
-}
