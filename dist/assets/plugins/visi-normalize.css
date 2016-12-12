@@ -89,13 +89,74 @@ sup {
 img {
     border-style: none; /* 图片默认无边框 */
 }
-::-moz-selection {
-    background: #fe57a1; /* 选中时候反转色 */
-    color: #fff;
-    text-shadow: none;
+svg:not(:root) {
+    overflow: hidden; /* IE9支持SVG的bug */
 }
-::selection{
-    background: #fe57a1;
-    color: #fff;
-    text-shadow: none;
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace; /* 纠正短语标签的字体 */
+    font-size: 1em; /* 纠正短语标签的大小 */
+}
+figure {
+    margin: 1em 40px; /* 流媒体外边距 */
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font: inherit; /* 继承 */
+    margin: 0; /* 重置外边距0 */
+}
+optgroup {
+    font-weight: bold;
+}
+button,
+input { /* 显示边缘溢出 */
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+html [type="button"]
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button; /* 苹果按钮 支持 */
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0; /* 移除内边距 */
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;  /* 表单分组格式 */
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    box-sizing: border-box; /* 文字环绕样式 */
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+textarea {
+    overflow: auto;
 }
