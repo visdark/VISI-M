@@ -6,19 +6,6 @@ body {
 html {
     box-sizing: border-box;
 }
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-* {
-    outline: none;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    -webkit-touch-callout: none;
-    background: -webkit-linear-gradient(top, transparent, transparent);
-    background: linear-gradient(to bottom, transparent, transparent);
-}
 body {
     color: #333333;
     padding: 0;
