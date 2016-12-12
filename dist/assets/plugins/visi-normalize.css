@@ -188,4 +188,5 @@ textarea {
 label{
     width: 100%;
     overflow: hidden;
+    display: block;
 }
