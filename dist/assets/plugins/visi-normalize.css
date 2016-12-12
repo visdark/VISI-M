@@ -185,3 +185,7 @@ textarea {
     -webkit-appearance: button;
     font: inherit;
 }
+label{
+    width: 100%;
+    overflow: hidden;
+}
