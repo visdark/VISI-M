@@ -72,27 +72,32 @@
     <hr />
 
     <form action="" method="get">
-        <label for="mname">main name: </label>
-        <fieldset>  <legend>Personalia:</legend>  <select id="mname">
-            <optgroup label="Swedish Cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
+        <fieldset>
+            <legend>下拉选择:</legend>
+            <label for="form1">下拉选择: </label>
+            <select id="form1">
+            <optgroup label="性别">
+                <option value="a">男</option>
+                <option value="b">女</option>
             </optgroup>
-            <optgroup label="German Cars">
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
+            <optgroup label="性别">
+                <option value="c">男</option>
+                <option value="d">女</option>
             </optgroup>
-        </select>   </fieldset>
-        <fieldset> <legend>Personalia:</legend>
-        <label for="fname">First name: </label><input type="text" id="fname" /><br />
-        <label for="lname">Last name: </label><input type="text" id="lname" /><br />
-
-            <label for="tname">Text name: </label>
-            <textarea rows="10" cols="30" id="tname">
-我是一个文本框。
-</textarea><br />
-        <input type="submit" value="Submit" />
-        <button type="button">{{button}}</button></fieldset>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>姓名:</legend>
+            <label for="form2">输入框: </label>
+            <input type="text" id="form2" /><br />
+            <label for="form3">文本框: </label>
+            <textarea rows="10" cols="30" id="form3">我是一个文本框。</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>提交按钮:</legend>
+            <input type="submit" value="提交" />
+            <button type="button">{{button}}</button>
+        </fieldset>
     </form>
     <h3>相关属性</h3>
     <hr />
