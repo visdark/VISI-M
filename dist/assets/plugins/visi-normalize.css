@@ -80,9 +80,22 @@ sup {
 }
 
 sub {
-    bottom: -0.25em;
+    bottom: -0.25em; /* 下标 */
 }
 
 sup {
-    top: -0.5em;
+    top: -0.5em; /* 上标 */
+}
+img {
+    border-style: none; /* 图片默认无边框 */
+}
+::-moz-selection {
+    background: #fe57a1; /* 选中时候反转色 */
+    color: #fff;
+    text-shadow: none;
+}
+::selection{
+    background: #fe57a1;
+    color: #fff;
+    text-shadow: none;
 }
