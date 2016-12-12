@@ -53,8 +53,21 @@ abbr[title] {
     text-decoration: underline;
     text-decoration: underline dotted; /* 统一加入下划线 */
 }
-
 b,
 strong {
-    font-weight: 700;  /* 等同于bold */
+    font-weight: inherit; /* 防止Safari 6 规则重复 */
+}
+b,
+strong {
+    font-weight: bolder; /* 重置加粗样式 */
+}
+dfn {
+    font-style: italic; /* 安卓 代码斜体 */
+}
+mark {
+    background-color: #ff0; /* 记号文本 有点像笔记中涂画的重点 */
+    color: #000;
+}
+small {
+    font-size: 80%; /* 缩小文本 */
 }
