@@ -94,7 +94,31 @@
             <textarea rows="10" cols="30" id="form3">我是一个文本框。</textarea>
         </fieldset>
         <fieldset>
+            <legend>其他输入方式:</legend>
+            <label>选择:<br />
+            <input type="checkbox" name="vehicle[]" value="Bike">自行车
+            <input type="checkbox" name="vehicle[]" value="Car">轿车
+            <input type="checkbox" name="vehicle[]" value="Boat">船
+            </label><br />
+            <label>
+            <input type="date" name="day">
+            </label><br />
+            <label>
+                <input type="file" name="img">
+            </label><br />
+            <label>
+                <input type="password" name="pwd">
+            </label><br />
+            <label>
+                <input type="radio" name="gender" value="女"> 女
+            </label><br />
+            <label>
+                <input type="range" name="points" min="1" max="10">
+            </label><br />
+        </fieldset>
+        <fieldset>
             <legend>提交按钮:</legend>
+            <input type="image" src="assets/img/demo.jpg" alt="Submit"><br />
             <input type="submit" value="提交" />
             <button type="button">{{button}}</button>
         </fieldset>
